@@ -8,7 +8,7 @@ class Paquet:
                 for p in range(13):
                     self.container.append(Carte(p, i))
         elif type == "JEU":
-            print("Test")
+            print("Deck Crée")
 
     def ajouter(self, card):
         self.container.append(card)
@@ -35,11 +35,21 @@ class Paquet:
         temp = self.container
         random.shuffle(temp)
         self.container = temp
-    
-    #def distribution(self, num):
-
+    def distribution(self, num):
+        ListPaquet, x = [], 0
+        for i in range(num): ListPaquet.append(Paquet("JEU"))
+        for i in range(len(self.container)):
+            ListPaquet[x].ajouter(self.enlever())
+            if x >= num-1:
+                x = 0
+            else:
+                x+=1
+        return ListPaquet
+                
 if __name__ == '__main__':
     paquet = Paquet("PIOCHE")
     print(paquet)
     paquet.melanger()
     print(paquet)
+    paquet.distribution(2)
+    
