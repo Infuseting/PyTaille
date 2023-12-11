@@ -12,8 +12,6 @@ class Carte:
     def getWinner(card):
         cardvar = card[0]
         for i in range(1, len(card)):
-            if cardvar.puissance and card[i].puissance == 13:
-                return None
             if cardvar.puissance == card[i].puissance:
                 return False
             elif cardvar.puissance < card[i].puissance:
