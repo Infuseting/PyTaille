@@ -12,7 +12,10 @@ class Paquet:
             print("Creation d'un jeu de carte pour un joueur ! ")
         elif type == "Terrain":
             print("Creation d'un paquet de terrain")
-
+    def __iter__(self):
+        return iter(self.container)
+    def getCard(self):
+        return self.container[-1]
     def ajouter(self, card):
         self.container.append(card)
     def enlever(self):
