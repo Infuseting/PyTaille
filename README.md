@@ -3,7 +3,7 @@ Ce projet est un projet d'etude ayant pour objectif de valider des competences d
 QUI A FAIT LE PROJET ?
 ==================================================
 
-Le projet est developpé par ma personne (Arthur Serret) ainsi que deux autres personnes qui m'ont accompagnés Theo Chevalier et Lucien Darquier
+Le projet est developpé par ma personne ainsi que deux autres personnes qui m'ont accompagnés.
 
 QU'EST CE QUE C'EST ?
 ==================================================
